@@ -10,7 +10,7 @@ ${Browser}      Chrome
 ${URL}          https://magento.softwaretestingboard.com
 ${firstName}    Abdelrahman
 ${lastName}     Wael
-${email}        abdelrahman.wael@moj4.com
+${email}        abdelrahman.wael@moj5.com
 ${password}     Dd#123456789
 ${searchItem}   bag
 ${address}      14 Test Street
