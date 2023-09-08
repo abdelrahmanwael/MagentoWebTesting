@@ -63,6 +63,10 @@ Run the following command to execute the functional test scenarios:
 
 ``robot --include Functional TestCases\testCases.robot``
 
+Run the following command to execute all the test scenarios:
+
+``robot --include TestCases\testCases.robot``
+
 ## Test Reports
 After executing the test scenarios, the test reports will be generated in the results directory. Open the HTML files in a web browser to view the detailed reports.
 
