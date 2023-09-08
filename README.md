@@ -1,4 +1,4 @@
-Automation Testing Project
+Magento Web Application Testing
 This project demonstrates the automation testing of a web application using the Page Object Model (POM) with Robot Framework and Selenium Library. The project includes test scenarios that cover different functionalities of the application and are tagged accordingly for better test management.
 
 Prerequisites
@@ -14,6 +14,7 @@ Open the project in PyCharm IDE.
 Install the required dependencies by running the command: pip install -r requirements.txt.
 Configuration
 Update the chromedriver path in the config.robot file to match the location of the ChromeDriver executable on your machine.
+
 Test Scenarios
 Scenario 1 [P1] - Registering a new account
 Objective: As a guest user, I want to register a new account to the application so that I can log in and perform actions.
@@ -28,6 +29,7 @@ Submit the form.
 Verify that the account is successfully registered.
 Log out from the application.
 Verify that the user can log in successfully with the registered account.
+
 Scenario 2 [P2] - Checking out an order from the cart
 Objective: As a user, I want to navigate to my cart, complete the payment details, and check out the order.
 
@@ -40,6 +42,7 @@ Go to the cart.
 Complete the payment details.
 Proceed with the checkout process.
 Verify that the order is successfully placed.
+
 Scenario 3 [P3] - Searching for a keyword and asserting the results
 Objective: As a user, I want to log in to the application and search for a specific keyword ("Nike"), then assert the search results.
 
@@ -49,18 +52,20 @@ Navigate to the web application.
 Sign in to the application with valid credentials.
 Search for the keyword "Nike".
 Verify that the search results contain the expected items.
-Test Execution
+
+Test Execution:
+
 To execute the test scenarios, follow these steps:
 
 Open a terminal and navigate to the project directory.
 Run the following command to execute the smoke test scenarios:
 Copy
-robot --include Smoke tests/
-```
+robot --include Smoke TestCases\testCases.robot  
+
 Run the following command to execute the functional test scenarios:
 Copy
-robot --include Functional tests/
-```
+robot --include Functional TestCases\testCases.robot 
+
 Test Reports
 After executing the test scenarios, the test reports will be generated in the results directory. Open the HTML files in a web browser to view the detailed reports.
 
